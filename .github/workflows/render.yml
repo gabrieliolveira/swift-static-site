@@ -1,0 +1,15 @@
+name: RENDER
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to production
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: srv-chqcehu7avjb90k0mkgg?key=ChWJVifi0PQ
+          api-key: rnd_SyH0v2X3MilD4N6biHLjZAULLYut
